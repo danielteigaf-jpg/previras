@@ -1,0 +1,6 @@
+{
+  "name": "PREVIRAS - Prevenção de IRAS",
+  "description": "Aplicação web educativa para prevenção de Infecções Relacionadas à Assistência à Saúde (IRAS), higiene das mãos e segurança do paciente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

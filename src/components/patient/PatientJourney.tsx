@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HandHygienePractice } from './HandHygienePractice';
 import { PATIENT_CHALLENGES } from '../../data/officialContent';
 import { PatientChallenge } from '../../types/previras';
 import {
@@ -202,6 +203,8 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
                 </li>
               </ul>
             </div>
+
+            <HandHygienePractice />
 
             {/* 2. Perguntar com Carinho */}
             <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-3">

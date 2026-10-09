@@ -1,0 +1,33 @@
+name: Validar PREVIRAS sem publicar
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feature/videos-higiene-maos]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Verificar TypeScript
+        run: npm run lint
+
+      - name: Compilar o site
+        run: npm run build
+        env:
+          GITHUB_PAGES: 'true'

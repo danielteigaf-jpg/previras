@@ -814,7 +814,7 @@ export const OFFICIAL_REFERENCES = [
     institution: 'ANVISA',
     title: 'RDC nº 42, de 25 de outubro de 2010',
     description: 'Dispõe sobre a obrigatoriedade de disponibilização de preparação alcoólica para fricção antisséptica das mãos pelos serviços de saúde do país.',
-    url: undefined
+    url: 'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2010/res0042_25_10_2010.html'
   },
   {
     institution: 'ANVISA',
@@ -850,7 +850,7 @@ export const OFFICIAL_REFERENCES = [
     institution: 'ORGANIZAÇÃO MUNDIAL DA SAÚDE (OMS / WHO)',
     title: 'WHO Guidelines on Hand Hygiene in Health Care',
     description: 'Diretrizes mundiais de referência sobre os cinco momentos para a higiene das mãos e técnicas de fricção antisséptica.',
-    url: undefined
+    url: 'https://www.who.int/publications/i/item/9789241597906'
   },
   {
     institution: 'COFEN',

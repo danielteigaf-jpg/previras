@@ -86,9 +86,12 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({ onBackToHome, on
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-600/60 border border-teal-400/30 text-teal-100 text-xs font-bold tracking-wide">
               <Heart className="w-3.5 h-3.5 fill-teal-200" /> Prevenir também é cuidar
             </div>
-            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Você também faz parte desse cuidado.</h1>
-            <p className="text-sm sm:text-base text-teal-100 leading-relaxed">
-              Você não precisa conhecer todos os procedimentos para participar da sua segurança. Perguntar, observar, comunicar e pedir ajuda também são formas de cuidar. Este guia foi preparado por estudantes do Técnico de Enfermagem para pacientes e acompanhantes.
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight uppercase">Existe alguém esperando por você em casa.</h1>
+            <p className="text-base sm:text-lg text-white font-semibold leading-relaxed">
+              Pergunte. Avise. Participe. Sua voz pode ajudar a prevenir riscos e tornar seu atendimento mais seguro.
+            </p>
+            <p className="text-sm text-teal-100 leading-relaxed">
+              Se você acompanha alguém, sua atenção também faz parte desse cuidado.
             </p>
           </div>
         </div>

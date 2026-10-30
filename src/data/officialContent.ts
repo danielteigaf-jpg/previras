@@ -21,7 +21,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'palms',
-    officialReference: 'Anvisa / OMS: Manual para Observadores da Higiene das Mãos'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'dorsum',
-    officialReference: 'Anvisa: Protocolo para a Prática de Higiene das Mãos em Serviços de Saúde'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'interdigital',
-    officialReference: 'OMS: WHO Guidelines on Hand Hygiene in Health Care'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'backs_fingers',
-    officialReference: 'Anvisa / Ministério da Saúde (PNCIRAS)'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'thumbs',
-    officialReference: 'Anvisa / OMS: Diretrizes Internacionais de Higiene das Mãos'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'fingertips',
-    officialReference: 'Anvisa / Nota Técnica GVIMS/GGTES'
+    officialReference: 'Anvisa (2026): Segurança do Paciente em Serviços de Saúde — Higiene das Mãos'
   },
 ];
 

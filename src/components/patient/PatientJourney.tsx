@@ -246,7 +246,7 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
                 </div>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Bombas de infusão, suportes de soro, sondas de urina e curativos exigem técnica profissional estéril:
+                Bombas de infusão, sondas, curativos e outros dispositivos devem ser manipulados pela equipe, com a técnica asséptica adequada a cada procedimento:
               </p>
               <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-2">
@@ -259,7 +259,7 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
-                  <span>Mantenha a bolsa de urina sempre abaixo do nível da cintura do paciente para não retornar urina para a bexiga.</span>
+                  <span>Mantenha a bolsa coletora abaixo do nível da bexiga, sem encostar no chão. Não puxe nem dobre o tubo; chame a enfermagem se notar vazamento, obstrução ou alteração.</span>
                 </li>
               </ul>
             </div>

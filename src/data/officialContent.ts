@@ -330,10 +330,10 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
   },
   {
     id: 'dispensador',
-    name: 'Dispensador de Álcool 70%',
+    name: 'Dispensador de preparação alcoólica',
     category: 'sanitizer',
     icon: 'sparkles',
-    description: 'Disponível no ponto de assistência (beira-leito) para quebrar a transmissão.',
+    description: 'Disponível no ponto de assistência (beira-leito), conforme indicação e protocolo do serviço.',
     cleanActionName: 'Fricção Antisséptica por 20 a 30s',
     cleanActionDesc: 'Quando as mãos não estiverem visivelmente sujas, a preparação alcoólica é indicada para a fricção antisséptica.'
   }
@@ -453,7 +453,7 @@ export const RISK_SITUATIONS: RiskSituation[] = [
 export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
   {
     id: 1,
-    question: 'Qual é a duração recomendada pela Anvisa para a fricção antisséptica das mãos com preparação alcoólica?',
+    question: 'Qual é a duração recomendada pela Anvisa para a fricção antisséptica das mãos com preparação alcoólica para higiene das mãos?',
     options: [
       { id: 'a', text: '5 a 10 segundos', isCorrect: false },
       { id: 'b', text: '20 a 30 segundos (até as mãos secarem)', isCorrect: true },
@@ -466,12 +466,12 @@ export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 2,
-    question: 'Em qual das seguintes situações a lavagem das mãos com ÁGUA E SABONETE LÍQUIDO é OBRIGATÓRIA em vez do álcool a 70%?',
+    question: 'Em qual das seguintes situações deve-se optar pela higiene das mãos com ÁGUA E SABONETE em vez da preparação alcoólica?',
     options: [
       { id: 'a', text: 'Quando as mãos estiverem visivelmente sujas, após usar o banheiro ou quando houver suspeita/exposição a microrganismos formadores de esporos', isCorrect: true },
       { id: 'b', text: 'Sempre antes de aferir a temperatura axilar', isCorrect: false },
       { id: 'c', text: 'Apenas quando o dispensador de álcool estiver quente', isCorrect: false },
-      { id: 'd', text: 'Nunca, o álcool sempre tem preferência absoluta mesmo com sujidade', isCorrect: false }
+      { id: 'd', text: 'Nunca, a preparação alcoólica sempre tem preferência, mesmo com sujidade visível', isCorrect: false }
     ],
     explanation: 'Use água e sabonete quando as mãos estiverem visivelmente sujas, após usar o banheiro e nas situações indicadas para suspeita ou exposição a microrganismos formadores de esporos, como Clostridioides difficile. Siga também o protocolo institucional.',
     keyTakeaway: 'Água e sabonete: 40 a 60 segundos. Preparação alcoólica: 20 a 30 segundos; escolha conforme a indicação clínica e o protocolo.',
@@ -499,7 +499,7 @@ export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
       { id: 'c', text: 'Basta higienizar as mãos uma vez no início do plantão se usar luvas em todos os pacientes', isCorrect: false },
       { id: 'd', text: 'Pode-se lavar as luvas na torneira para reutilizá-las no mesmo quarto', isCorrect: false }
     ],
-    explanation: 'O uso de luvas nunca substitui a higiene das mãos. A higiene antes previne contaminar o exterior da luva ao calçá-la, e a higiene após a retirada remove qualquer microrganismo adquirido por perfurações microscópicas ou durante a desparamentação.',
+    explanation: 'O uso de luvas nunca substitui a higiene das mãos. A higiene antes e depois do uso reduz o risco de transmissão. Durante o uso ou a retirada das luvas, as mãos podem ser contaminadas; por isso, a higiene após removê-las é indispensável.',
     keyTakeaway: 'Calçar com mãos limpas, retirar e higienizar imediatamente!',
     officialSource: 'Nota Técnica GVIMS/GGTES Anvisa'
   },
@@ -703,7 +703,7 @@ export const TRANSMISSION_CHAIN_LINKS: TransmissionChainLink[] = [
 export const PATIENT_CHALLENGES: PatientChallenge[] = [
   {
     id: 1,
-    situation: 'Você está no quarto do hospital e um profissional entra para verificar sua medicação na veia. Você percebe que ele não usou o dispensador de álcool na entrada.',
+    situation: 'Você está no quarto do hospital e um profissional entra para verificar sua medicação na veia. Você percebe que ele ainda não higienizou as mãos antes do cuidado.',
     question: 'Qual é a melhor atitude para a sua segurança?',
     options: [
       {

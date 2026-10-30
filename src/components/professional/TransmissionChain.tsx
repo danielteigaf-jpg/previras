@@ -56,7 +56,7 @@ export const TransmissionChain: React.FC<TransmissionChainProps> = ({ onComplete
               A Cadeia de Transmissão de Microrganismos
             </h2>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              "<strong>Uma atitude pode interromper uma cadeia de transmissão.</strong>" A infecção só ocorre quando todos os 6 elos estão conectados. Descubra como a intervenção de enfermagem quebra cada elo!
+              "<strong>Uma atitude pode interromper uma cadeia de transmissão.</strong>" A transmissão depende da interação dos seis elos da cadeia. Interromper um ou mais deles reduz o risco de infecção. Descubra como a intervenção de enfermagem pode agir em cada elo!
             </p>
           </div>
 

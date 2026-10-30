@@ -68,10 +68,10 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
               Missão 1 · Técnica de Fricção Antisséptica
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Passo a Passo da Higiene das Mãos
+              Movimentos da Fricção das Mãos
             </h2>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Navegue pelas 6 etapas da técnica de higiene das mãos. Observe o mapa anatômico iluminando cada região durante a fricção.
+              Navegue pelos seis movimentos de fricção das superfícies das mãos. Eles integram a técnica, mas não substituem as demais fases da lavagem com água e sabonete.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
               }`}
             >
               <Sparkles className="w-3.5 h-3.5" />
-              Álcool 70% (20-30s)
+              Preparação alcoólica (20-30s)
             </button>
             <button
               type="button"
@@ -110,17 +110,17 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
           <div>
             {hygieneMode === 'alcohol' ? (
               <span>
-                <strong>Padrão de Excelência:</strong> Sem sujidade visível, a fricção com álcool a 70% é mais rápida, tem maior eficácia antimicrobiana imediata e resseca menos a pele que a lavagem repetida.
+                <strong>Quando indicada:</strong> Se as mãos não estiverem visivelmente sujas, utilize preparação alcoólica suficiente para cobrir todas as superfícies e friccione por 20 a 30 segundos, até secar. A concentração final é de 60% a 80% para preparações líquidas e mínima de 70% para gel, espuma e outras apresentações.
               </span>
             ) : (
               <span>
-                <strong>Obrigatório:</strong> Quando as mãos estiverem visivelmente sujas, com sangue ou fluidos, e na suspeita de patógenos esporulados (ex: <em>C. difficile</em>), a lavagem com água e sabão líquido é indispensável.
+                <strong>Use água e sabonete:</strong> quando houver sujidade visível, após usar o banheiro e nas situações indicadas para suspeita ou exposição a microrganismos formadores de esporos (por exemplo, <em>C. difficile</em>). O procedimento deve durar 40 a 60 segundos.
               </span>
             )}
           </div>
         </div>
         <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-relaxed text-amber-950">
-          <strong>Punhos e antebraços:</strong> não são uma etapa universal obrigatória da higiene rotineira das mãos. O Manual da Anvisa (2026) orienta atenção especial a essas áreas em unidades neonatais e pediátricas quando houver maior risco de contato. Siga o protocolo específico do serviço. O preparo cirúrgico das mãos e antebraços possui técnica própria.
+          <strong>Punhos e antebraços:</strong> não integram rotineiramente os seis movimentos da higiene simples ou da fricção antisséptica. O Manual da Anvisa (2026) orienta atenção especial a essas áreas em unidades neonatais e pediátricas quando houver maior risco de contato, inclusive na avaliação da prática. Siga o protocolo específico do serviço. O preparo cirúrgico das mãos e antebraços é uma técnica distinta.
         </div>
       </div>
 
@@ -135,7 +135,7 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
           {/* Friction Indicator Tag */}
           <div className="w-full flex items-center justify-between text-xs text-slate-300 mb-4 z-10">
             <span className="font-semibold text-teal-400">
-              Etapa {currentStep.id} de 7
+              Movimento {currentStep.id} de {HAND_HYGIENE_STEPS.length}
             </span>
             <span className="bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700 font-mono text-[11px]">
               {hygieneMode === 'alcohol' ? currentStep.durationAlcohol : currentStep.durationSoap}

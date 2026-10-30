@@ -71,7 +71,7 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
               Passo a Passo da Higiene das Mãos
             </h2>
             <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Navegue pelas 7 etapas padronizadas pela Anvisa e OMS. Observe o mapa anatômico das mãos iluminando a área exata sob fricção mecânica.
+              Navegue pelas 6 etapas da técnica de higiene das mãos. Observe o mapa anatômico iluminando cada região durante a fricção.
             </p>
           </div>
 
@@ -118,6 +118,9 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
               </span>
             )}
           </div>
+        </div>
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-relaxed text-amber-950">
+          <strong>Punhos e antebraços:</strong> não são uma etapa universal obrigatória da higiene rotineira das mãos. O Manual da Anvisa (2026) orienta atenção especial a essas áreas em unidades neonatais e pediátricas quando houver maior risco de contato. Siga o protocolo específico do serviço. O preparo cirúrgico das mãos e antebraços possui técnica própria.
         </div>
       </div>
 
@@ -457,7 +460,7 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
           {/* Footer Controls & Progress Steps */}
           <div className="mt-6 pt-5 border-t border-slate-100">
             {/* Step indicator buttons */}
-            <div className="grid grid-cols-7 gap-1.5 mb-4">
+            <div className="grid grid-cols-6 gap-1.5 mb-4">
               {HAND_HYGIENE_STEPS.map((step, idx) => {
                 const isSelected = idx === currentStepIndex;
                 const isVisited = visitedSteps.has(idx);
@@ -516,7 +519,7 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
         <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center gap-3 text-emerald-900">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
           <div className="text-sm font-semibold">
-            Você completou todas as 7 etapas da técnica de higiene das mãos! A fricção adequada de cada área garante a redução da carga microbiana transitória.
+            Você completou as 6 etapas da técnica de higiene das mãos! A fricção adequada de todas as superfícies indicadas ajuda a reduzir a carga microbiana.
           </div>
         </div>
       )}

@@ -72,7 +72,7 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     title: '6. Pontas dos dedos e unhas',
     subtitle: 'Polpas digitais e leito ungueal contra a palma',
     description: 'Friccione as polpas digitais e as unhas da mão direita fazendo movimentos circulares para frente e para trás contra a palma da mão esquerda. Repita com a mão oposta.',
-    recommendation: 'A região subungueal e as pontas dos dedos concentram a maior contagem de microrganismos das mãos.',
+    recommendation: 'As pontas dos dedos e a região das unhas podem ser esquecidas; inclua-as na fricção.',
     durationAlcohol: '20 a 30 segundos no total',
     durationSoap: '40 a 60 segundos no total',
     highlightZone: 'fingertips',
@@ -591,7 +591,7 @@ export const RISK_HOTSPOTS: RiskHotspot[] = [
     xPercent: 52,
     yPercent: 44,
     hazardDescription: 'O técnico de enfermagem está prestando cuidados utilizando anéis e smartwatch.',
-    correctionAction: 'Aplicar a diretriz "Adorno Zero": retirar relógios, anéis, alianças e pulseiras antes de iniciar as atividades no serviço de saúde.',
+    correctionAction: 'Cumprir a NR-32 e a regra institucional: não utilizar adornos nos postos de trabalho.',
     normReference: 'NR-32, item 32.2.4.5, alínea b (adornos nos postos de trabalho)'
   },
   {

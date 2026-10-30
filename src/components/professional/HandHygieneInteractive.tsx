@@ -119,6 +119,11 @@ export const HandHygieneInteractive: React.FC<HandHygieneProps> = ({ onComplete,
             )}
           </div>
         </div>
+        {hygieneMode === 'soap' && (
+          <div className="mt-3 rounded-xl border border-sky-200 bg-sky-50 p-4 text-xs leading-relaxed text-sky-950">
+            <strong>Lavagem completa:</strong> molhe as mãos; aplique sabonete líquido; realize os seis movimentos de fricção; enxágue bem; seque com papel-toalha descartável; e, se a torneira for manual, use o papel para fechá-la sem tocar diretamente no registro.
+          </div>
+        )}
         <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-relaxed text-amber-950">
           <strong>Punhos e antebraços:</strong> não integram rotineiramente os seis movimentos da higiene simples ou da fricção antisséptica. O Manual da Anvisa (2026) orienta atenção especial a essas áreas em unidades neonatais e pediátricas quando houver maior risco de contato, inclusive na avaliação da prática. Siga o protocolo específico do serviço. O preparo cirúrgico das mãos e antebraços é uma técnica distinta.
         </div>

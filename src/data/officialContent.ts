@@ -196,7 +196,7 @@ export const CLINICAL_SCENARIOS: ClinicalScenario[] = [
   },
   {
     id: 6,
-    scenario: 'Você já higienizou as mãos com álcool 70%, pegou a caneta limpa e vai escrever no prontuário no posto de enfermagem (sem ter tocado em nada contaminado).',
+    scenario: 'Você já realizou a higiene das mãos com preparação alcoólica, pegou uma caneta limpa e vai escrever no prontuário no posto de enfermagem, sem ter tocado em superfícies contaminadas.',
     context: 'Atividade burocrática em área administrativa limpa.',
     requiresHygiene: false,
     explanation: 'Neste momento específico, suas mãos já estão higienizadas e você está operando em superfície limpa. Não há indicação para higienizar novamente antes de encostar a caneta no papel.',
@@ -215,7 +215,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
   },
   {
     id: 2,
-    statement: 'As mãos devem ser higienizadas com água e sabão ou álcool 70% imediatamente após a retirada das luvas.',
+    statement: 'As mãos devem ser higienizadas imediatamente após a retirada das luvas, utilizando o método indicado para a situação.',
     isTrue: true,
     explanation: 'Verdadeiro! A retirada das luvas pode contaminar as mãos; por isso, a higiene das mãos deve ser realizada imediatamente após a remoção.',
     technicalRule: 'Descarte as luvas conforme a classificação do resíduo e o PGRSS da instituição; em seguida, higienize as mãos.',
@@ -223,7 +223,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
   },
   {
     id: 3,
-    statement: 'Para agilizar o plantão, é recomendado passar álcool a 70% por cima das luvas para atender o próximo paciente.',
+    statement: 'Para agilizar o plantão, é recomendado aplicar preparação alcoólica sobre luvas descartáveis para reutilizá-las no próximo paciente.',
     isTrue: false,
     explanation: 'Falso. Luvas descartáveis de uso único não devem ser desinfetadas para reutilização nem usadas entre pacientes. Retire-as, descarte-as conforme o PGRSS e higienize as mãos.',
     technicalRule: 'Não desinfete nem reutilize luvas descartáveis. Troque-as entre pacientes e entre tarefas/sítios quando indicado; higienize as mãos antes e depois do uso.',
@@ -235,7 +235,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     isTrue: false,
     explanation: 'Mito inaceitável! Caminhar com luvas fora do quarto contamina maçanetas, corrimãos, botões de elevador e dissemina microrganismos multirresistentes pela unidade de saúde.',
     technicalRule: 'Retire as luvas ao terminar a tarefa e antes de tocar superfícies limpas ou sair da zona de cuidado; descarte-as conforme o PGRSS e higienize as mãos.',
-    officialSource: 'RDC Anvisa nº 50 e Portaria MS'
+    officialSource: 'Precauções padrão e protocolo institucional de uso de luvas'
   },
   {
     id: 5,
@@ -249,7 +249,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     id: 6,
     statement: 'Não se deve digitar no teclado do computador, atender telefone celular ou manusear prontuários utilizando luvas de assistência.',
     isTrue: true,
-    explanation: 'Verdadeiro! Telefones celulares e computadores hospitalares são reservatórios crônicos de bactérias resistentes quando tocados com luvas usadas na assistência.',
+    explanation: 'Verdadeiro! Telefones celulares, computadores e prontuários podem ser contaminados quando tocados com luvas usadas na assistência e favorecer a transmissão cruzada.',
     technicalRule: 'Reserve o uso de luvas estritamente para o contato com o paciente/procedimento indicado.',
     officialSource: 'NR-32 / Ministério do Trabalho e Emprego & Anvisa'
   }
@@ -377,7 +377,7 @@ export const RISK_SITUATIONS: RiskSituation[] = [
         id: 'a',
         text: 'Permitido, desde que o relógio seja à prova d\'água e higienizado com álcool.',
         isCorrect: false,
-        feedback: 'Incorreto! A legislação brasileira proíbe expressamente o uso de qualquer adorno na assistência à saúde.'
+        feedback: 'Incorreto! A NR-32 determina que o empregador vede o uso de adornos nos postos de trabalho; a regra não depende de o relógio ser resistente à água.'
       },
       {
         id: 'b',
@@ -526,7 +526,7 @@ export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
       { id: 'd', text: 'A troca acidental de roupas de cama limpas na lavanderia', isCorrect: false }
     ],
     explanation: 'Contaminação cruzada é o transporte de agentes infecciosos entre pessoas, objetos (fômites) ou superfícies de assistência, frequentemente mediado pelas mãos não higienizadas dos profissionais de saúde.',
-    keyTakeaway: 'As mãos dos profissionais são o principal veículo de contaminação cruzada no hospital.',
+    keyTakeaway: 'As mãos dos profissionais são uma via importante de transmissão cruzada e devem ser higienizadas nos momentos indicados.',
     officialSource: 'Anvisa / Ministério da Saúde: Glossário de Controle de Infecções'
   },
   {
@@ -766,7 +766,7 @@ export const PATIENT_CHALLENGES: PatientChallenge[] = [
         id: 'b',
         text: 'Cobrir o nariz e a boca com a dobra interna do cotovelo/antebraço ou lenço descartável, e higienizar as mãos em seguida.',
         isCorrect: true,
-        explanation: 'Corretíssimo! A etiqueta respiratória com a dobra do cotovelo impede a disseminação de gotículas pelo ar e mantém as mãos limpas.'
+        explanation: 'Corretíssimo! A etiqueta respiratória reduz a dispersão de secreções respiratórias e ajuda a evitar que as mãos sejam contaminadas.'
       },
       {
         id: 'c',

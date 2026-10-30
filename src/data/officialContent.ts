@@ -703,105 +703,95 @@ export const TRANSMISSION_CHAIN_LINKS: TransmissionChainLink[] = [
 export const PATIENT_CHALLENGES: PatientChallenge[] = [
   {
     id: 1,
-    situation: 'Você está no quarto do hospital e um profissional entra para verificar sua medicação na veia. Você percebe que ele ainda não higienizou as mãos antes do cuidado.',
-    question: 'Qual é a melhor atitude para a sua segurança?',
+    situation: 'Durante a internação, um profissional se aproxima para cuidar do seu acesso venoso. Você ficou em dúvida se ele higienizou as mãos antes do procedimento.',
+    question: 'Como você pode participar desse cuidado?',
     options: [
-      {
-        id: 'a',
-        text: 'Ficar em silêncio por vergonha de incomodar o profissional.',
-        isCorrect: false,
-        explanation: 'Você tem todo o direito de ser protegido! Os profissionais de saúde apreciam e incentivam que pacientes e familiares lembrem sobre a higiene das mãos.'
-      },
-      {
-        id: 'b',
-        text: 'Perguntar educadamente: "Com licença, você já conseguiu higienizar as mãos hoje para me atender?"',
-        isCorrect: true,
-        explanation: 'Excelente! A Organização Mundial da Saúde estimula que pacientes e familiares façam essa pergunta gentil. Prevenir é um esforço conjunto e salva vidas!'
-      },
-      {
-        id: 'c',
-        text: 'Tentar desencaixar o soro você mesmo para não ser tocado.',
-        isCorrect: false,
-        explanation: 'Nunca mexa em soros ou cateteres! Isso pode causar lesões graves ou introduzir bactérias diretamente no seu sangue.'
-      }
+      { id: 'a', text: 'Perguntar com respeito: “Com licença, poderia higienizar as mãos antes de realizar meu cuidado?”', isCorrect: true, explanation: 'Correto. Você pode expressar dúvidas com respeito. A equipe deve acolher a pergunta; a responsabilidade pela higiene das mãos continua sendo dos profissionais e do serviço.' },
+      { id: 'b', text: 'Desconectar o soro para evitar o contato.', isCorrect: false, explanation: 'Não desconecte soros ou cateteres. Isso pode causar danos e deve ser avaliado pela equipe.' },
+      { id: 'c', text: 'Ficar em silêncio mesmo sem entender o cuidado.', isCorrect: false, explanation: 'Você tem direito de perguntar e receber explicações. Participar não significa fiscalizar, mas comunicar dúvidas.' }
     ]
   },
   {
     id: 2,
-    situation: 'O alarme do aparelho de soro (bomba de infusão) começou a apitar continuamente ao lado do seu leito.',
-    question: 'O que o acompanhante ou o paciente deve fazer?',
+    situation: 'A bomba de infusão ao lado do leito começa a apitar.',
+    question: 'O que é mais seguro fazer?',
     options: [
-      {
-        id: 'a',
-        text: 'Apertar os botões do aparelho para tentar silenciar ou desligar o bipe.',
-        isCorrect: false,
-        explanation: 'Nunca aperte botões de aparelhos médicos! Desprogramar a taxa de infusão pode injetar medicação rápida demais ou interromper um medicamento vital.'
-      },
-      {
-        id: 'b',
-        text: 'Acionar a campainha de chamada da enfermagem e aguardar o técnico responsável chegar.',
-        isCorrect: true,
-        explanation: 'Perfeito! Somente a equipe de enfermagem tem o treinamento técnico para avaliar a causa do alarme (ex: ar na linha, término da infusão) e reprogramar com segurança.'
-      },
-      {
-        id: 'c',
-        text: 'Puxar o cabo de energia da tomada para parar o barulho.',
-        isCorrect: false,
-        explanation: 'Isso desliga o suporte de infusão do paciente e pode comprometer a medicação prescrita.'
-      }
+      { id: 'a', text: 'Apertar os botões até o alarme parar.', isCorrect: false, explanation: 'Não altere a programação do equipamento. A equipe precisa avaliar a causa do alarme.' },
+      { id: 'b', text: 'Desligar o aparelho da tomada.', isCorrect: false, explanation: 'Desligar o equipamento pode interromper a infusão e comprometer o cuidado.' },
+      { id: 'c', text: 'Acionar a campainha e aguardar a equipe.', isCorrect: true, explanation: 'Isso mesmo. Avise a enfermagem e não manipule o equipamento, equipo ou cateter.' }
     ]
   },
   {
     id: 3,
-    situation: 'Você sente vontade de tossir ou espirrar enquanto está sentado na poltrona do quarto hospitalar.',
-    question: 'Qual é a etiqueta respiratória correta?',
+    situation: 'Você sente vontade de tossir ou espirrar enquanto está no quarto.',
+    question: 'Qual atitude ajuda a reduzir a dispersão de secreções?',
     options: [
-      {
-        id: 'a',
-        text: 'Cobrir a boca com as duas palmas das mãos desprotegidas.',
-        isCorrect: false,
-        explanation: 'Se você tossir nas mãos, as bactérias e vírus ficarão nelas e serão passados para tudo o que você tocar (grade da cama, controle, maçaneta).'
-      },
-      {
-        id: 'b',
-        text: 'Cobrir o nariz e a boca com a dobra interna do cotovelo/antebraço ou lenço descartável, e higienizar as mãos em seguida.',
-        isCorrect: true,
-        explanation: 'Corretíssimo! A etiqueta respiratória reduz a dispersão de secreções respiratórias e ajuda a evitar que as mãos sejam contaminadas.'
-      },
-      {
-        id: 'c',
-        text: 'Tossir livremente em direção ao chão.',
-        isCorrect: false,
-        explanation: 'A tosse e o espirro podem lançar secreções respiratórias no ambiente; por isso, cubra nariz e boca com lenço descartável ou a dobra do cotovelo e higienize as mãos em seguida.'
-      }
+      { id: 'a', text: 'Cobrir nariz e boca com as mãos e continuar usando os objetos.', isCorrect: false, explanation: 'As mãos podem ficar contaminadas e espalhar secreções. Se isso acontecer, higienize-as.' },
+      { id: 'b', text: 'Usar lenço descartável ou a dobra do cotovelo; depois descartar o lenço e higienizar as mãos.', isCorrect: true, explanation: 'Correto. Essa é uma medida de etiqueta respiratória. Use máscara quando a equipe orientar e siga as precauções do serviço.' },
+      { id: 'c', text: 'Tossir em direção ao ambiente.', isCorrect: false, explanation: 'Cubra nariz e boca para reduzir a dispersão de secreções e siga as orientações da equipe.' }
     ]
   },
   {
     id: 4,
-    situation: 'Você percebeu que o curativo na pele onde entra o cateter de soro do paciente começou a descolar e a pele está um pouco avermelhada.',
-    question: 'Como agir nessa situação?',
+    situation: 'O curativo próximo ao cateter está descolando e a pele ao redor parece avermelhada.',
+    question: 'O que você deve fazer?',
     options: [
-      {
-        id: 'a',
-        text: 'Passar uma pomada própria de casa que você trouxe na bolsa.',
-        isCorrect: false,
-        explanation: 'Nunca aplique remédios ou pomadas de fora do hospital sem a prescrição médica da equipe assistencial.'
-      },
-      {
-        id: 'b',
-        text: 'Colocar um esparadrapo comum trazido na bolsa sem higienizar as mãos.',
-        isCorrect: false,
-        explanation: 'Espadrapos não estéreis podem introduzir bactérias perigosas no orifício do cateter venoso.'
-      },
-      {
-        id: 'c',
-        text: 'Avisar imediatamente a equipe de enfermagem para que eles façam a avaliação e o novo curativo estéril.',
-        isCorrect: true,
-        explanation: 'Muito bem! A comunicação precoce de alterações na pele ou nos curativos permite agir rapidamente contra qualquer início de infecção.'
-      }
+      { id: 'a', text: 'Passar uma pomada que trouxe de casa.', isCorrect: false, explanation: 'Não aplique produtos ou medicamentos por conta própria. A equipe deve avaliar a pele e o dispositivo.' },
+      { id: 'b', text: 'Recolocar o curativo com fita adesiva comum.', isCorrect: false, explanation: 'Não tente refazer o curativo nem manipular o cateter. Avise a equipe para avaliação.' },
+      { id: 'c', text: 'Chamar a enfermagem e contar o que percebeu.', isCorrect: true, explanation: 'Muito bem. Dor, vermelhidão, calor, inchaço ou curativo solto devem ser comunicados para avaliação.' }
+    ]
+  },
+  {
+    id: 5,
+    situation: 'Um familiar está com tosse e coriza, mas pretende visitar você no hospital.',
+    question: 'Qual é a atitude mais segura?',
+    options: [
+      { id: 'a', text: 'Visitar normalmente, desde que fique pouco tempo.', isCorrect: false, explanation: 'Mesmo visitas curtas podem expor pessoas vulneráveis. O familiar deve avisar o serviço e evitar a visita até receber orientação.' },
+      { id: 'b', text: 'Avisar o serviço e adiar a visita enquanto estiver com sintomas, seguindo a orientação recebida.', isCorrect: true, explanation: 'Correto. Visitantes com sintomas devem comunicar o serviço e seguir as regras locais para reduzir o risco de transmissão.' },
+      { id: 'c', text: 'Entrar sem avisar e retirar a máscara se estiver desconfortável.', isCorrect: false, explanation: 'Não ignore as medidas de precaução. Máscara e outras orientações devem seguir a avaliação e as regras do serviço.' }
+    ]
+  },
+  {
+    id: 6,
+    situation: 'Antes de administrar um medicamento, a equipe pede que você confirme seus dados.',
+    question: 'O que ajuda a evitar erros de identificação?',
+    options: [
+      { id: 'a', text: 'Confirmar apenas o número do quarto.', isCorrect: false, explanation: 'O leito ou quarto não é identificador seguro, pois pode mudar ou ser compartilhado.' },
+      { id: 'b', text: 'Dizer seu nome completo e confirmar os identificadores solicitados; avisar se a pulseira estiver errada.', isCorrect: true, explanation: 'Isso mesmo. A identificação deve seguir o protocolo do serviço, com os identificadores definidos institucionalmente.' },
+      { id: 'c', text: 'Aceitar o medicamento sem conferir nada.', isCorrect: false, explanation: 'Você pode participar confirmando seus dados e perguntando quando houver dúvida.' }
+    ]
+  },
+  {
+    id: 7,
+    situation: 'Você tem alergia a um medicamento e também usa remédios em casa.',
+    question: 'O que deve informar à equipe?',
+    options: [
+      { id: 'a', text: 'Alergias, reações anteriores e todos os medicamentos e produtos que utiliza.', isCorrect: true, explanation: 'Correto. Compartilhar essas informações ajuda a equipe a avaliar riscos e planejar o cuidado. Não tome medicamentos trazidos de casa sem combinar com a equipe.' },
+      { id: 'b', text: 'Somente os medicamentos que considera mais importantes.', isCorrect: false, explanation: 'Informe tudo o que usa, inclusive vitaminas, chás e produtos sem receita, e relate alergias ou reações anteriores.' },
+      { id: 'c', text: 'Esconder a alergia para não atrasar o atendimento.', isCorrect: false, explanation: 'Nunca esconda alergias. A equipe precisa saber para avaliar opções seguras.' }
+    ]
+  },
+  {
+    id: 8,
+    situation: 'Você está sonolento e tonto, mas precisa ir ao banheiro.',
+    question: 'Qual é a atitude mais segura?',
+    options: [
+      { id: 'a', text: 'Levantar rapidamente sozinho para não incomodar.', isCorrect: false, explanation: 'Tontura e sonolência aumentam o risco de queda. Peça ajuda antes de se levantar.' },
+      { id: 'b', text: 'Apoiar-se nos equipamentos e tentar caminhar.', isCorrect: false, explanation: 'Equipamentos não são apoio seguro. Use a campainha e aguarde ajuda.' },
+      { id: 'c', text: 'Acionar a campainha e esperar a equipe ajudar.', isCorrect: true, explanation: 'Correto. Informe tontura, fraqueza ou sonolência e siga a orientação da equipe para mobilização segura.' }
+    ]
+  },
+  {
+    id: 9,
+    situation: 'Você está há bastante tempo na mesma posição e percebe uma área da pele dolorida e avermelhada.',
+    question: 'O que deve fazer?',
+    options: [
+      { id: 'a', text: 'Massagear com força a região avermelhada.', isCorrect: false, explanation: 'Não massageie áreas avermelhadas. Avise a equipe para avaliar a pele e orientar medidas de prevenção.' },
+      { id: 'b', text: 'Comunicar a equipe e conversar sobre mudança de posição e cuidados com a pele.', isCorrect: true, explanation: 'Muito bem. Dor, vermelhidão persistente ou feridas devem ser avaliadas. A equipe orientará medidas adequadas à sua condição.' },
+      { id: 'c', text: 'Aplicar qualquer creme disponível no quarto.', isCorrect: false, explanation: 'Não aplique produtos sem orientação. Os cuidados devem considerar a condição da pele e a avaliação profissional.' }
     ]
   }
-];
+];;
 
 export const OFFICIAL_REFERENCES = [
   {

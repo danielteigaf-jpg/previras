@@ -138,7 +138,7 @@ export const CertificateGenerator: React.FC<CertificateGeneratorProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700 font-medium max-w-xl mx-auto text-left py-2">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-teal-600 shrink-0" />
-              <span>Higiene das Mãos (Técnica dos 7 passos)</span>
+              <span>Higiene das Mãos (seis movimentos de fricção)</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-teal-600 shrink-0" />

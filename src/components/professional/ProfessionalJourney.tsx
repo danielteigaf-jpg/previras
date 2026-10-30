@@ -267,15 +267,15 @@ export const ProfessionalJourney: React.FC<ProfessionalJourneyProps> = ({
                 </div>
 
                 <h1 className="text-2xl sm:text-4xl font-bold tracking-tight">
-                  Prevenir também é cuidar.
+                  Para você, pode ser só mais um plantão. Para alguém, é a vida inteira.
                 </h1>
 
                 <p className="text-teal-100 text-sm sm:text-base leading-relaxed">
-                  Bem-vindo à experiência educativa <strong>PREVIRAS</strong>, criada por estudantes do Técnico de Enfermagem para fortalecer as práticas de prevenção de Infecções Relacionadas à Assistência à Saúde (IRAS).
+                  Não deixe a rotina fazer você esquecer que, por trás de cada leito, existe uma história, uma família e alguém que confiou em suas mãos.
                 </p>
 
                 <div className="pt-2 flex items-center gap-4 text-xs font-medium text-teal-200">
-                  <span>Motto: <em>"Uma atitude pode interromper uma cadeia de transmissão."</em></span>
+                  <span><em>Prevenir também é cuidar.</em></span>
                 </div>
               </div>
             </div>

@@ -791,7 +791,7 @@ export const PATIENT_CHALLENGES: PatientChallenge[] = [
       { id: 'c', text: 'Aplicar qualquer creme disponível no quarto.', isCorrect: false, explanation: 'Não aplique produtos sem orientação. Os cuidados devem considerar a condição da pele e a avaliação profissional.' }
     ]
   }
-];;
+ ];
 
 export const OFFICIAL_REFERENCES = [
   {

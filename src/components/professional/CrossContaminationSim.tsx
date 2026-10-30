@@ -73,7 +73,7 @@ export const CrossContaminationSim: React.FC<CrossContaminationSimProps> = ({ on
       // Clean hands immediately
       setHandsContaminated(false);
       setHistoryEvents(prev => [
-        `Higienização realizada no dispensador com álcool a 70%! As mãos estão limpas e a cadeia de transmissão foi interrompida.`,
+        `Fricção realizada com preparação alcoólica conforme orientação do produto, por 20 a 30 segundos e até a secagem. As mãos estão higienizadas.`,
         ...prev.slice(0, 5)
       ]);
       if (actionsCount >= 4 && onComplete) {
@@ -278,7 +278,7 @@ export const CrossContaminationSim: React.FC<CrossContaminationSimProps> = ({ on
           <div className="mt-4 p-3 rounded-xl bg-slate-800/60 border border-slate-700/60 flex items-center gap-2 text-xs text-slate-300">
             <HandMetal className="w-4 h-4 text-teal-400 shrink-0" />
             <span>
-              <strong>Dica:</strong> Toque no <strong>Dispensador de Álcool 70%</strong> sempre que suas mãos ficarem contaminadas para desarmar a transmissão!
+              <strong>Dica:</strong> Selecione o dispensador para registrar a higiene das mãos com preparação alcoólica, quando indicada. Friccione todas as superfícies por 20 a 30 segundos, até secar.
             </span>
           </div>
         </div>
@@ -317,19 +317,19 @@ export const CrossContaminationSim: React.FC<CrossContaminationSimProps> = ({ on
                     className="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-all flex items-center justify-center gap-1.5 shadow-sm cursor-pointer"
                   >
                     <Sparkles className="w-3.5 h-3.5" />
-                    Realizar Desinfecção com Álcool 70%
+                    Registrar limpeza/desinfecção conforme protocolo
                   </button>
                 )}
 
                 {activeItem.id === 'dispensador' && (
                   <div className="p-3 rounded-xl bg-emerald-50 text-emerald-900 text-xs font-semibold">
-                    Dispensador acionado! Mãos friccionadas com álcool a 70% por 20 a 30 segundos.
+                    Dispensador acionado! A fricção antisséptica com preparação alcoólica deve durar 20 a 30 segundos, até a secagem completa.
                   </div>
                 )}
               </div>
             ) : (
               <div className="py-6 text-center text-xs text-slate-500">
-                Toque em qualquer objeto na planta ao lado para ver sua via de transmissão e a atitude capaz de desinfetá-lo.
+                Selecione um item para conhecer o risco e a medida de controle. Na prática, use produto regularizado compatível, siga o fabricante, o tempo de contato e o protocolo institucional.
               </div>
             )}
           </div>

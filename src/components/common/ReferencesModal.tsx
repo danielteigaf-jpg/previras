@@ -58,6 +58,16 @@ export const ReferencesModal: React.FC<ReferencesModalProps> = ({ isOpen, onClos
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {ref.description}
                 </p>
+                {ref.url && (
+                  <a
+                    href={ref.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-2 text-xs font-semibold text-teal-700 hover:text-teal-900 underline underline-offset-2"
+                  >
+                    Consultar documento oficial <ExternalLink className="w-3 h-3" />
+                  </a>
+                )}
               </div>
             ))}
           </div>

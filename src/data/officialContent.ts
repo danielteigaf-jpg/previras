@@ -16,10 +16,10 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     id: 1,
     title: '1. Palma com palma',
     subtitle: 'Fricção das palmas das mãos',
-    description: 'Aplique o produto (preparação alcoólica a 70% ou sabonete líquido) cobrindo toda a superfície das mãos. Friccione as palmas das mãos entre si em movimentos circulares.',
+    description: 'Aplique preparação alcoólica suficiente para cobrir todas as superfícies das mãos ou, na higiene com água e sabonete, aplique sabonete líquido/espuma. Friccione as palmas das mãos entre si.',
     recommendation: 'Garante a distribuição homogênea do antisséptico na maior área de contato inicial.',
-    durationAlcohol: '2 a 3 segundos nesta etapa',
-    durationSoap: '5 a 8 segundos nesta etapa',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'palms',
     officialReference: 'Anvisa / OMS: Manual para Observadores da Higiene das Mãos'
   },
@@ -29,8 +29,8 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     subtitle: 'Dedos entrelaçados em ambos os dorsos',
     description: 'Friccione a palma da mão direita contra o dorso da mão esquerda, entrelaçando os dedos. Em seguida, repita o movimento com a palma esquerda sobre o dorso da mão direita.',
     recommendation: 'Alcança o dorso da mão e as comissuras laterais dos dedos, frequentemente negligenciadas.',
-    durationAlcohol: '2 a 3 segundos por dorso',
-    durationSoap: '5 a 8 segundos por dorso',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'dorsum',
     officialReference: 'Anvisa: Protocolo para a Prática de Higiene das Mãos em Serviços de Saúde'
   },
@@ -40,8 +40,8 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     subtitle: 'Palma com palma com dedos entrelaçados',
     description: 'Friccione as palmas das mãos entre si, mantendo os dedos entrelaçados para friccionar profundamente os espaços interdigitais.',
     recommendation: 'Os espaços interdigitais acumulam umidade e flora microbiana transitória.',
-    durationAlcohol: '2 a 3 segundos',
-    durationSoap: '5 a 8 segundos',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'interdigital',
     officialReference: 'OMS: WHO Guidelines on Hand Hygiene in Health Care'
   },
@@ -51,8 +51,8 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     subtitle: 'Dedos engatados e movimentos laterais',
     description: 'Engate o dorso dos dedos de uma mão contra a palma da mão oposta, segurando os dedos e realizando movimentos de vaivém.',
     recommendation: 'Higieniza as articulações interfalângicas e as dobras articulares dorsais dos dedos.',
-    durationAlcohol: '2 a 3 segundos',
-    durationSoap: '5 a 8 segundos',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'backs_fingers',
     officialReference: 'Anvisa / Ministério da Saúde (PNCIRAS)'
   },
@@ -61,9 +61,9 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     title: '5. Polegares em movimento rotativo',
     subtitle: 'Fricção rotativa de ambos os polegares',
     description: 'Envolva o polegar esquerdo com a palma da mão direita e faça uma fricção rotativa completa. Repita o procedimento com o polegar direito envolvido pela mão esquerda.',
-    recommendation: 'O polegar representa até 20% da superfície de preensão manual e é a região mais usada em procedimentos.',
-    durationAlcohol: '2 a 3 segundos por polegar',
-    durationSoap: '5 a 8 segundos por polegar',
+    recommendation: 'Os polegares podem ser esquecidos durante a higiene; por isso, devem receber fricção cuidadosa em ambos os lados.',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'thumbs',
     officialReference: 'Anvisa / OMS: Diretrizes Internacionais de Higiene das Mãos'
   },
@@ -73,8 +73,8 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     subtitle: 'Polpas digitais e leito ungueal contra a palma',
     description: 'Friccione as polpas digitais e as unhas da mão direita fazendo movimentos circulares para frente e para trás contra a palma da mão esquerda. Repita com a mão oposta.',
     recommendation: 'A região subungueal e as pontas dos dedos concentram a maior contagem de microrganismos das mãos.',
-    durationAlcohol: '2 a 3 segundos por mão',
-    durationSoap: '5 a 8 segundos por mão',
+    durationAlcohol: '20 a 30 segundos no total',
+    durationSoap: '40 a 60 segundos no total',
     highlightZone: 'fingertips',
     officialReference: 'Anvisa / Nota Técnica GVIMS/GGTES'
   },
@@ -138,7 +138,7 @@ export const FIVE_MOMENTS: FiveMoment[] = [
     number: '5',
     title: 'Após contato com áreas próximas ao paciente',
     when: 'Após tocar qualquer objeto, mobília ou equipamento no entorno imediato do paciente, mesmo sem ter tocado o paciente diretamente.',
-    why: 'As superfícies do leito são intensamente colonizadas pela flora do paciente e transmitem bactérias para as mãos.',
+    why: 'Objetos e superfícies próximos ao paciente podem ser contaminados durante o cuidado e transferir microrganismos para as mãos.',
     examples: [
       'Ajustar a grade do leito ou mesa de cabeceira.',
       'Desligar o alarme da bomba de infusão ou monitor multiparamétrico.',
@@ -209,7 +209,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     id: 1,
     statement: 'O uso de luvas de procedimento substitui a necessidade de higienizar as mãos antes e após o atendimento.',
     isTrue: false,
-    explanation: 'Mito perigoso! As luvas NUNCA substituem a higienização das mãos. Elas podem apresentar microfissuras invisíveis e as mãos se contaminam durante a própria retirada das luvas.',
+    explanation: 'Mito perigoso! Luvas não substituem a higiene das mãos. As mãos devem ser higienizadas antes de calçá-las e imediatamente após retirá-las, pois pode ocorrer contaminação durante o uso ou a retirada.',
     technicalRule: 'Higienize as mãos antes de calçar as luvas e imediatamente após sua retirada.',
     officialSource: 'Anvisa / OMS: Manual para Luvas em Serviços de Saúde'
   },
@@ -217,16 +217,16 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     id: 2,
     statement: 'As mãos devem ser higienizadas com água e sabão ou álcool 70% imediatamente após a retirada das luvas.',
     isTrue: true,
-    explanation: 'Verdadeiro! Estudos demonstram que até 30% dos profissionais contaminam as mãos com patógenos hospitalares no exato momento da retirada (desparamentação) das luvas.',
-    technicalRule: 'Descarte as luvas em lixo infectante e higienize as mãos sem tocar em superfícies.',
+    explanation: 'Verdadeiro! A retirada das luvas pode contaminar as mãos; por isso, a higiene das mãos deve ser realizada imediatamente após a remoção.',
+    technicalRule: 'Descarte as luvas conforme a classificação do resíduo e o PGRSS da instituição; em seguida, higienize as mãos.',
     officialSource: 'Nota Técnica Anvisa GVIMS/GGTES'
   },
   {
     id: 3,
     statement: 'Para agilizar o plantão, é recomendado passar álcool a 70% por cima das luvas para atender o próximo paciente.',
     isTrue: false,
-    explanation: 'Mito grave e proibido! O álcool degrada o látex e o nitrilo, abrindo microporos que permitem a passagem de bactérias e vírus. As luvas devem ser trocadas e descartadas.',
-    technicalRule: 'Nunca aplique álcool ou antissépticos sobre luvas. Troque de luvas a cada paciente e higienize as mãos.',
+    explanation: 'Falso. Luvas descartáveis de uso único não devem ser desinfetadas para reutilização nem usadas entre pacientes. Retire-as, descarte-as conforme o PGRSS e higienize as mãos.',
+    technicalRule: 'Não desinfete nem reutilize luvas descartáveis. Troque-as entre pacientes e entre tarefas/sítios quando indicado; higienize as mãos antes e depois do uso.',
     officialSource: 'Anvisa / CDC / OMS'
   },
   {
@@ -234,7 +234,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     statement: 'É permitido caminhar pelos corredores da unidade calçando as mesmas luvas usadas no quarto do paciente para buscar insumos.',
     isTrue: false,
     explanation: 'Mito inaceitável! Caminhar com luvas fora do quarto contamina maçanetas, corrimãos, botões de elevador e dissemina microrganismos multirresistentes pela unidade de saúde.',
-    technicalRule: 'As luvas devem ser retiradas e descartadas dentro do quarto antes de sair para o corredor.',
+    technicalRule: 'Retire as luvas ao terminar a tarefa e antes de tocar superfícies limpas ou sair da zona de cuidado; descarte-as conforme o PGRSS e higienize as mãos.',
     officialSource: 'RDC Anvisa nº 50 e Portaria MS'
   },
   {
@@ -242,7 +242,7 @@ export const GLOVES_STATEMENTS: GloveStatement[] = [
     statement: 'No mesmo paciente, ao passar de um sítio corporal contaminado (ex: curativo com exsudato) para um sítio limpo (ex: cateter venoso), deve-se trocar de luvas e higienizar as mãos.',
     isTrue: true,
     explanation: 'Verdadeiro! Esse procedimento evita a autoinoculação e a contaminação cruzada interna no próprio paciente.',
-    technicalRule: 'Sempre troque as luvas e friccione álcool 70% nas mãos entre áreas limpas e contaminadas.',
+    technicalRule: 'Ao passar de uma área contaminada para uma área limpa, retire as luvas, higienize as mãos e coloque um novo par se a próxima tarefa exigir luvas.',
     officialSource: 'OMS / Protocolo de Segurança do Paciente (MS/Fiocruz)'
   },
   {
@@ -270,18 +270,18 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
     name: 'Grade do Leito',
     category: 'surface',
     icon: 'bed',
-    description: 'Superfície de alto toque, intensamente colonizada pela flora do paciente.',
+    description: 'Superfície de alto toque que pode ser contaminada durante a assistência.',
     cleanActionName: 'Desinfetar Superfície',
-    cleanActionDesc: 'Desinfecção concorrente com álcool 70% ou desinfetante hospitalar.'
+    cleanActionDesc: 'Limpar e, quando indicado, desinfetar com produto regularizado e compatível com a superfície, respeitando rótulo, tempo de contato e protocolo institucional.'
   },
   {
     id: 'celular',
     name: 'Smartphone do Profissional',
     category: 'personal',
     icon: 'smartphone',
-    description: 'Dispositivo pessoal de alto toque que acumula calor e biofilmes bacterianos.',
-    cleanActionName: 'Higienizar Celular com Álcool Isopropílico/70%',
-    cleanActionDesc: 'Nunca atender celular durante assistência ou com luvas.'
+    description: 'Dispositivo pessoal de alto toque que pode transportar microrganismos se for manuseado durante a assistência.',
+    cleanActionName: 'Higienizar conforme orientação do fabricante',
+    cleanActionDesc: 'Evitar manusear o celular durante procedimentos. Para higienizá-lo, seguir as instruções do fabricante e a política institucional; não aplicar produtos incompatíveis.'
   },
   {
     id: 'computador',
@@ -290,7 +290,7 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
     icon: 'monitor',
     description: 'Estação de enfermagem e prescrição tocada por múltiplos profissionais.',
     cleanActionName: 'Limpar Teclado e Mouse',
-    cleanActionDesc: 'Desinfecção de superfícies antes e após o uso; mãos limpas ao digitar.'
+    cleanActionDesc: 'Limpar/desinfetar conforme rotina institucional e compatibilidade do equipamento; higienizar as mãos nos momentos indicados.'
   },
   {
     id: 'caneta',
@@ -299,7 +299,7 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
     icon: 'pen-tool',
     description: 'Compartilhada frequentemente entre colegas e apoiada em bancadas diversas.',
     cleanActionName: 'Desinfetar Caneta',
-    cleanActionDesc: 'Friccionar gaze embebida em álcool a 70% e não levar à boca.'
+    cleanActionDesc: 'Higienizar conforme orientação do fabricante e protocolo institucional; não levar à boca.'
   },
   {
     id: 'prontuario',
@@ -317,7 +317,7 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
     icon: 'activity',
     description: 'Equipamento eletromédico vital que fica ao lado do leito.',
     cleanActionName: 'Desinfecção do Equipamento',
-    cleanActionDesc: 'Limpeza e desinfecção com álcool 70% entre atendimentos.'
+    cleanActionDesc: 'Limpeza e desinfecção conforme orientação do fabricante do equipamento, produto regularizado compatível e protocolo institucional.'
   },
   {
     id: 'macaneta',
@@ -335,7 +335,7 @@ export const SIMULATION_OBJECTS: SimulationObject[] = [
     icon: 'sparkles',
     description: 'Disponível no ponto de assistência (beira-leito) para quebrar a transmissão.',
     cleanActionName: 'Fricção Antisséptica por 20 a 30s',
-    cleanActionDesc: 'O método mais rápido, eficaz e protetor para as mãos sem sujidade visível!'
+    cleanActionDesc: 'Quando as mãos não estiverem visivelmente sujas, a preparação alcoólica é indicada para a fricção antisséptica.'
   }
 ];
 
@@ -354,15 +354,15 @@ export const RISK_SITUATIONS: RiskSituation[] = [
       },
       {
         id: 'b',
-        text: 'Risco grave de contaminação cruzada. Dispositivos móveis nunca devem ser manuseados com luvas ou durante procedimentos assépticos.',
+        text: 'Risco de contaminação cruzada. Não interrompa uma tarefa assistencial ou asséptica para manusear o celular; se precisar utilizá-lo, retire as luvas, higienize as mãos e siga a política de limpeza do aparelho.',
         isCorrect: true,
-        feedback: 'Exato! O celular atua como fômito de alto risco. Durante procedimentos clínicos, o foco deve ser total e as mãos dedicadas exclusivamente ao cuidado estéril/limpo.'
+        feedback: 'Correto! O manuseio do celular durante a assistência pode transferir microrganismos entre o aparelho, as mãos, as luvas e o ambiente. A higiene do aparelho deve seguir as instruções do fabricante e a política do serviço.'
       },
       {
         id: 'c',
         text: 'Não há risco desde que o celular seja novo.',
         isCorrect: false,
-        feedback: 'Incorreto! Qualquer superfície de telefone acumula biofilme bacteriano após poucas horas de contato.'
+        feedback: 'Incorreto! Mesmo aparelhos novos podem ser contaminados pelo uso; a limpeza deve seguir orientação do fabricante e rotina institucional.'
       }
     ],
     regulatoryContext: 'Nota Técnica GVIMS/GGTES Anvisa & Manual de Segurança do Paciente'
@@ -381,15 +381,15 @@ export const RISK_SITUATIONS: RiskSituation[] = [
       },
       {
         id: 'b',
-        text: 'Infração grave à NR-32. Adornos acumulam microrganismos sob a pele, impedem a higienização completa e rasgam luvas.',
+        text: 'Descumprimento da NR-32: o empregador deve vedar o uso de adornos nos postos de trabalho.',
         isCorrect: true,
-        feedback: 'Correto! A Norma Regulamentadora NR-32 (item 32.2.4.5) estabelece a política "Adorno Zero": é vedado o uso de alianças, anéis, pulseiras, relógios de pulso e cordões no ambiente assistencial.'
+        feedback: 'Correto! O item 32.2.4.5, alínea b, da NR-32 determina que o empregador vede o uso de adornos nos postos de trabalho. A instituição deve orientar quais itens são abrangidos pela regra.'
       },
       {
         id: 'c',
         text: 'Somente anéis com pedras são proibidos; aliança lisa e relógio de pulso são liberados.',
         isCorrect: false,
-        feedback: 'Incorreto! Estudos mostram que a pele sob alianças abriga até 10 vezes mais bactérias gram-negativas do que áreas livres.'
+        feedback: 'Incorreto! A proibição do uso de adornos nos postos de trabalho não depende do material ou valor do objeto.'
       }
     ],
     regulatoryContext: 'NR-32 (MTE) e Protocolos de Controle de IRAS da Anvisa'
@@ -404,19 +404,19 @@ export const RISK_SITUATIONS: RiskSituation[] = [
         id: 'a',
         text: 'Comportamento de risco que expõe a comunidade a microrganismos hospitalares e viola as normas de biossegurança.',
         isCorrect: true,
-        feedback: 'Excelente! O jaleco e avental são Equipamentos de Proteção Individual (EPI) de uso exclusivo no local de assistência. Transportá-los para fora carrega patógenos hospitalares para a comunidade.'
+        feedback: 'Excelente! Correto! A NR-32, item 32.2.4.6.2, determina que trabalhadores não deixem o local de trabalho com os EPIs e as vestimentas utilizadas nas atividades. O serviço deve definir o fluxo de troca e higienização.'
       },
       {
         id: 'b',
         text: 'Aceitável caso o profissional não tenha atendido pacientes em isolamento.',
         isCorrect: false,
-        feedback: 'Incorreto! Todos os pacientes e ambientes hospitalares possuem microbiota patogênica que coloniza os tecidos do uniforme.'
+        feedback: 'Incorreto! A regra sobre não levar vestimentas e EPIs utilizados para fora do local de trabalho não depende de o paciente estar em isolamento.'
       },
       {
         id: 'c',
         text: 'Permitido desde que o jaleco seja fechado até a gola.',
         isCorrect: false,
-        feedback: 'Incorreto! A superfície têxtil externa retém bactérias multirresistentes por dias.'
+        feedback: 'Incorreto! Fechar o jaleco não substitui o cumprimento das regras institucionais de troca, guarda e higienização das vestimentas.'
       }
     ],
     regulatoryContext: 'Norma Regulamentadora NR-32 e Código de Ética dos Profissionais de Enfermagem'
@@ -435,9 +435,9 @@ export const RISK_SITUATIONS: RiskSituation[] = [
       },
       {
         id: 'b',
-        text: 'Risco de contaminação cruzada. O diafragma do estetoscópio deve ser friccionado com álcool 70% entre o exame de cada paciente.',
+        text: 'Risco de contaminação cruzada. O estetoscópio deve ser limpo e desinfetado entre pacientes, com produto compatível e conforme as instruções do fabricante e o protocolo institucional.',
         isCorrect: true,
-        feedback: 'Correto! Estetoscópios, termômetros e esfigmomanômetros são equipamentos não críticos que exigem limpeza e desinfecção com álcool 70% entre cada uso para interromper a cadeia.'
+        feedback: 'Correto! Equipamentos compartilhados podem transferir microrganismos. A limpeza e a desinfecção entre pacientes devem seguir o fabricante, o produto regularizado indicado e o protocolo institucional.'
       },
       {
         id: 'c',
@@ -453,28 +453,28 @@ export const RISK_SITUATIONS: RiskSituation[] = [
 export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
   {
     id: 1,
-    question: 'Qual é o tempo mínimo preconizado pela Anvisa e pela OMS para a fricção das mãos com preparação alcoólica a 70%?',
+    question: 'Qual é a duração recomendada pela Anvisa para a fricção antisséptica das mãos com preparação alcoólica?',
     options: [
       { id: 'a', text: '5 a 10 segundos', isCorrect: false },
       { id: 'b', text: '20 a 30 segundos (até as mãos secarem)', isCorrect: true },
       { id: 'c', text: '60 a 90 segundos', isCorrect: false },
       { id: 'd', text: 'Exatamente 2 minutos', isCorrect: false }
     ],
-    explanation: 'A fricção antisséptica das mãos com álcool a 70% deve durar de 20 a 30 segundos, cobrindo todas as superfícies das mãos até a secagem completa. Não use papel toalha para secar o álcool.',
-    keyTakeaway: '20 a 30 segundos é o tempo padrão para a preparação alcoólica agir eficazmente na destruição da membrana dos microrganismos.',
+    explanation: 'A fricção antisséptica com preparação alcoólica deve durar de 20 a 30 segundos, cobrindo todas as superfícies até a completa secagem. A concentração final deve ser de 60% a 80% para preparações líquidas e mínima de 70% para gel, espuma e outras apresentações.',
+    keyTakeaway: '20 a 30 segundos é o tempo total recomendado para a fricção antisséptica das mãos com preparação alcoólica.',
     officialSource: 'Anvisa / OMS: Diretrizes de Higiene das Mãos'
   },
   {
     id: 2,
     question: 'Em qual das seguintes situações a lavagem das mãos com ÁGUA E SABONETE LÍQUIDO é OBRIGATÓRIA em vez do álcool a 70%?',
     options: [
-      { id: 'a', text: 'Quando as mãos estiverem visivelmente sujas ou contaminadas com fluidos corpóreos', isCorrect: true },
+      { id: 'a', text: 'Quando as mãos estiverem visivelmente sujas, após usar o banheiro ou quando houver suspeita/exposição a microrganismos formadores de esporos', isCorrect: true },
       { id: 'b', text: 'Sempre antes de aferir a temperatura axilar', isCorrect: false },
       { id: 'c', text: 'Apenas quando o dispensador de álcool estiver quente', isCorrect: false },
       { id: 'd', text: 'Nunca, o álcool sempre tem preferência absoluta mesmo com sujidade', isCorrect: false }
     ],
-    explanation: 'A água e sabonete líquido são obrigatórios quando há sujidade visível, sangue, secreções ou após usar o banheiro, bem como diante de suspeita de bactérias esporuladas (como Clostridioides difficile), onde a fricção mecânica com água e sabão remove os esporos.',
-    keyTakeaway: 'Sujidade visível = Água e sabão obrigatório (40 a 60 segundos). Mãos sem sujidade visível = Álcool 70% é a escolha de excelência.',
+    explanation: 'Use água e sabonete quando as mãos estiverem visivelmente sujas, após usar o banheiro e nas situações indicadas para suspeita ou exposição a microrganismos formadores de esporos, como Clostridioides difficile. Siga também o protocolo institucional.',
+    keyTakeaway: 'Água e sabonete: 40 a 60 segundos. Preparação alcoólica: 20 a 30 segundos; escolha conforme a indicação clínica e o protocolo.',
     officialSource: 'Protocolo de Higiene das Mãos Anvisa / Ministério da Saúde'
   },
   {
@@ -505,14 +505,14 @@ export const FINAL_CHALLENGE_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 5,
-    question: 'Segundo a Norma Regulamentadora NR-32 (item 32.2.4.5), qual conduta em relação a adornos é exigida de todos os trabalhadores em estabelecimentos de saúde?',
+    question: 'Segundo a NR-32, item 32.2.4.5, qual medida o empregador deve adotar em relação aos adornos nos postos de trabalho?',
     options: [
-      { id: 'a', text: 'É vedado (proibido) o uso de alianças, anéis, pulseiras, relógios de pulso, colares e brincos compridos', isCorrect: true },
+      { id: 'a', text: 'O empregador deve vedar o uso de adornos nos postos de trabalho', isCorrect: true },
       { id: 'b', text: 'Permitido o uso de aliança simples e relógio desde que não toquem o paciente', isCorrect: false },
       { id: 'c', text: 'Permitido o uso caso os adornos sejam de ouro ou prata pura', isCorrect: false },
       { id: 'd', text: 'Apenas brincos são proibidos; anéis podem ser usados com luvas', isCorrect: false }
     ],
-    explanation: 'A NR-32 estabelece a política "Adorno Zero". Os adornos acumulam sujidades biológicas difíceis de desinfetar, rasgam luvas de proteção e impedem a higienização correta dos punhos e dedos.',
+    explanation: 'A NR-32 determina que o empregador vede o uso de adornos nos postos de trabalho (item 32.2.4.5, alínea b). A norma também exige higiene das mãos antes e depois do uso de luvas (item 32.2.4.3.2).',
     keyTakeaway: 'Adorno zero: segurança para quem cuida e para quem é cuidado.',
     officialSource: 'Ministério do Trabalho e Emprego - NR-32'
   },
@@ -564,7 +564,7 @@ export const RISK_HOTSPOTS: RiskHotspot[] = [
     xPercent: 72,
     yPercent: 58,
     hazardDescription: 'Luvas de procedimento com resíduos foram deixadas sobre a mesa onde o paciente apoia refeições e pertences pessoais.',
-    correctionAction: 'As luvas devem ser descartadas imediatamente na lixeira com pedal para resíduos infectantes (Grupo A) antes de tocar qualquer superfície.',
+    correctionAction: 'Retire as luvas ao terminar a tarefa e descarte-as conforme a classificação do resíduo e o PGRSS. A RDC 222/2018 inclui no Grupo D luvas de procedimento que não tiveram contato com sangue ou líquidos corpóreos; materiais com contaminação devem ser classificados conforme a norma.',
     normReference: 'RDC Anvisa nº 222/2018 (Gerenciamento de Resíduos de Serviços de Saúde)'
   },
   {
@@ -592,14 +592,14 @@ export const RISK_HOTSPOTS: RiskHotspot[] = [
     yPercent: 44,
     hazardDescription: 'O técnico de enfermagem está prestando cuidados utilizando anéis e smartwatch.',
     correctionAction: 'Aplicar a diretriz "Adorno Zero": retirar relógios, anéis, alianças e pulseiras antes de iniciar as atividades no serviço de saúde.',
-    normReference: 'NR-32 item 32.2.4.5 (Vedação de Adornos)'
+    normReference: 'NR-32, item 32.2.4.5, alínea b (adornos nos postos de trabalho)'
   },
   {
     id: 'dispenser_blocked',
     title: 'Dispensador de álcool vazio ou obstruído',
     xPercent: 88,
     yPercent: 35,
-    hazardDescription: 'O dispensador de preparação alcoólica a 70% está sem recarga e com caixas empilhadas na frente, impedindo a higienização ágil.',
+    hazardDescription: 'O dispensador de preparação alcoólica para higiene das mãos está vazio ou obstruído, impedindo a higiene no ponto de assistência.',
     correctionAction: 'Garantir o ponto de assistência suprido e desobstruído. Comunicar imediatamente a equipe de suprimentos/CCIH para abastecimento.',
     normReference: 'RDC Anvisa nº 42/2010 (Obrigatoriedade de Dispensadores de Álcool)'
   },
@@ -608,8 +608,8 @@ export const RISK_HOTSPOTS: RiskHotspot[] = [
     title: 'Estetoscópio pendurado sem desinfecção prévia',
     xPercent: 42,
     yPercent: 25,
-    hazardDescription: 'Estetoscópio em contato direto com a pele do pescoço do profissional após ter auscultado o paciente anterior sem desinfecção com álcool 70%.',
-    correctionAction: 'Realizar fricção com gaze embebida em álcool a 70% no diafragma e olivas antes e após cada atendimento.',
+    hazardDescription: 'Estetoscópio utilizado em um paciente e levado ao próximo sem limpeza e desinfecção entre atendimentos.',
+    correctionAction: 'Realizar limpeza e desinfecção das partes utilizadas entre pacientes, com produto compatível e conforme as instruções do fabricante e o protocolo institucional.',
     normReference: 'Guia de Limpeza e Desinfecção de Fômites Hospitalares (Anvisa)'
   }
 ];
@@ -666,7 +666,7 @@ export const TRANSMISSION_CHAIN_LINKS: TransmissionChainLink[] = [
       'Contato Direto (pele a pele)',
       'Contato Indireto através das mãos do profissional de saúde',
       'Contato Indireto através de objetos contaminados (fômites: celulares, canetas, termômetros)',
-      'Gotículas (< 1 metro) ou Aerossóis (partículas suspensas no ar)'
+      'Gotículas respiratórias e aerossóis: diferem em tamanho, comportamento no ar e medidas de precaução; a avaliação depende do agente e do procedimento.'
     ],
     interruptionAction: 'Como interromper este elo (O elo de ouro!):',
     nursingPractice: 'HIGIENIZAÇÃO DAS MÃOS nos 5 momentos da OMS, precauções padrão e específicas (contato, gotículas, aerossóis), uso de EPI adequado e desinfecção de equipamentos entre pacientes.'
@@ -772,7 +772,7 @@ export const PATIENT_CHALLENGES: PatientChallenge[] = [
         id: 'c',
         text: 'Tossir livremente em direção ao chão.',
         isCorrect: false,
-        explanation: 'Gotículas respiratórias flutuam pelo ar e alcançam superfícies a mais de 1 metro de distância.'
+        explanation: 'A tosse e o espirro podem lançar secreções respiratórias no ambiente; por isso, cubra nariz e boca com lenço descartável ou a dobra do cotovelo e higienize as mãos em seguida.'
       }
     ]
   },
@@ -806,32 +806,53 @@ export const PATIENT_CHALLENGES: PatientChallenge[] = [
 export const OFFICIAL_REFERENCES = [
   {
     institution: 'ANVISA',
+    title: 'Segurança do Paciente em Serviços de Saúde: Higiene das Mãos (2026) — Volume 12',
+    description: 'Manual oficial da Anvisa com orientações atualizadas sobre higiene simples, antisséptica, fricção com preparação alcoólica, punhos em unidades neonatais/pediátricas e monitoramento da prática.',
+    url: 'https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/manuais/seguranadopacientecaderno12higienedasmos.pdf'
+  },
+  {
+    institution: 'ANVISA',
     title: 'RDC nº 42, de 25 de outubro de 2010',
     description: 'Dispõe sobre a obrigatoriedade de disponibilização de preparação alcoólica para fricção antisséptica das mãos pelos serviços de saúde do país.'
   },
   {
     institution: 'ANVISA',
+    title: 'RDC nº 222, de 28 de março de 2018',
+    description: 'Regulamenta as boas práticas de gerenciamento dos resíduos de serviços de saúde, incluindo a classificação dos resíduos e a segregação conforme o PGRSS.',
+    url: 'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&link=S&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2018'
+  },
+  {
+    institution: 'ANVISA / MINISTÉRIO DA SAÚDE',
     title: 'Protocolo para a Prática de Higiene das Mãos em Serviços de Saúde',
-    description: 'Protocolo Integrante do Programa Nacional de Segurança do Paciente (Ministério da Saúde / Anvisa / Fiocruz).'
+    description: 'Protocolo de referência para a implantação da higiene das mãos nos serviços de saúde.',
+    url: 'https://www.gov.br/saude/pt-br/composicao/saes/seguranca-do-paciente/protocolos-de-seguranca-do-paciente/protocolo-higiene-das-maos.pdf/view'
   },
   {
-    institution: 'ANVISA / GVIMS / GGTES',
-    title: 'Nota Técnica GVIMS/GGTES - Medidas de Prevenção e Controle de IRAS',
-    description: 'Orientações oficiais vigentes para prevenção e controle de disseminação de microrganismos multirresistentes e uso de EPIs.'
+    institution: 'ANVISA',
+    title: 'Segurança do Paciente em Serviços de Saúde: Limpeza e Desinfecção de Superfícies',
+    description: 'Referência para limpeza e desinfecção de superfícies e equipamentos, seleção de produtos e prevenção da transmissão cruzada.',
+    url: 'https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/manual-de-limpeza-e-desinfeccao-de-superficies.pdf'
   },
   {
-    institution: 'Organização Mundial da Saúde (OMS / WHO)',
-    title: 'WHO Guidelines on Hand Hygiene in Health Care (Clean Care is Safer Care)',
-    description: 'Diretrizes mundiais de referência sobre os 5 Momentos para a Higiene das Mãos e técnicas de fricção antisséptica.'
+    institution: 'ANVISA / MINISTÉRIO DA SAÚDE',
+    title: 'Nota Técnica Conjunta nº 01/2024 — Micobactérias não tuberculosas',
+    description: 'Reforça a necessidade de saneantes regularizados e do cumprimento das instruções do fabricante, incluindo modo de uso e tempo de contato.',
+    url: 'https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas-vigentes/nota-tecnica-conjunta-anvisa_ms-mnt_mcr-dez-2024.pdf/%40%40download/file'
   },
   {
-    institution: 'Ministério do Trabalho e Emprego (MTE)',
-    title: 'Norma Regulamentadora NR-32 (Segurança e Saúde no Trabalho em Serviços de Saúde)',
-    description: 'Item 32.2.4.5: Proibição expressa do uso de adornos e exigências para uniformes e desparamentação segura.'
+    institution: 'MINISTÉRIO DO TRABALHO E EMPREGO',
+    title: 'Norma Regulamentadora NR-32',
+    description: 'Item 32.2.4.3.2: luvas não substituem a higiene das mãos. Item 32.2.4.5, alínea b: vedação de adornos nos postos de trabalho. Itens 32.2.4.6 e seguintes: vestimentas de trabalho.',
+    url: 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-paritaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-32-nr-32'
   },
   {
-    institution: 'COFEN (Conselho Federal de Enfermagem)',
-    title: 'Código de Ética dos Profissionais de Enfermagem & Resoluções de Biossegurança',
-    description: 'Dever ético e profissional do cuidado seguro, livre de danos decorrentes de imperícia, imprudência ou negligência.'
+    institution: 'ORGANIZAÇÃO MUNDIAL DA SAÚDE (OMS / WHO)',
+    title: 'WHO Guidelines on Hand Hygiene in Health Care',
+    description: 'Diretrizes mundiais de referência sobre os cinco momentos para a higiene das mãos e técnicas de fricção antisséptica.'
+  },
+  {
+    institution: 'COFEN',
+    title: 'Código de Ética dos Profissionais de Enfermagem',
+    description: 'Referência ética para a prestação de assistência segura e livre de danos evitáveis.'
   }
 ];

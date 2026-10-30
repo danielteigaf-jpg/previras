@@ -55,7 +55,7 @@ export const ProfessionalJourney: React.FC<ProfessionalJourneyProps> = ({
       title: 'Higiene das Mãos',
       subtitle: 'Passo a passo com mapa anatômico',
       icon: <HandMetal className="w-5 h-5 text-teal-600" />,
-      tag: 'Técnica dos 7 Passos'
+      tag: 'Seis movimentos de fricção'
     },
     {
       id: 'missao2-momentos' as ProfessionalTab,

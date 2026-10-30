@@ -4,7 +4,7 @@ import { PatientChallenge } from '../../types/previras';
 import {
   Heart, Droplets, HelpCircle, AlertTriangle, Wind, Bell, CheckCircle2,
   ArrowRight, RotateCcw, MessageCircle, ArrowLeft, Users,
-  UserCheck, Pill, Footprints, BedDouble, Printer, Info
+  UserCheck, Pill, Footprints, BedDouble, Printer, Info, ClipboardList
 } from 'lucide-react';
 
 interface PatientJourneyProps {
@@ -104,6 +104,20 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({ onBackToHome, on
             <div className="print:hidden rounded-2xl border border-teal-200 bg-teal-50 p-4 text-sm text-teal-950">
               <div className="flex items-start gap-2"><Info className="w-5 h-5 shrink-0 mt-0.5" /><p><strong>Uma parceria, não uma cobrança:</strong> a segurança é responsabilidade do serviço e de toda a equipe. Sua participação ajuda a perceber dúvidas e mudanças. Se não puder fazer algo sozinho, peça ajuda.</p></div>
             </div>
+
+            <Card icon={<ClipboardList className="w-6 h-6" />} step="Ao chegar ao Pronto-Socorro" title="Entenda a classificação de risco">
+              <p className="text-sm text-slate-700 leading-relaxed">Ao chegar, você poderá passar pela classificação de risco. Um profissional avalia suas queixas, sintomas e sinais de saúde para identificar a prioridade do atendimento.</p>
+              <div className="rounded-xl border border-teal-100 bg-teal-50 p-3 text-sm text-teal-950">
+                <strong>O atendimento não é necessariamente por ordem de chegada.</strong> Pessoas em situações mais graves podem ser atendidas primeiro, mesmo que tenham chegado depois.
+              </div>
+              <ul className="space-y-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Conte com clareza o que está sentindo, quando começou e se houve piora.</li>
+                <li>Informe doenças, alergias e medicamentos que usa.</li>
+                <li>A classificação de risco organiza a prioridade; ela não é um diagnóstico médico.</li>
+                <li>Se estiver aguardando e sentir piora ou um sintoma novo, avise imediatamente a equipe.</li>
+              </ul>
+              <p className="text-xs text-slate-600">A prioridade pode mudar conforme a avaliação e a evolução dos sintomas. Este guia não promete nem prevê tempo de espera: siga as orientações da equipe do serviço.</p>
+            </Card>
 
             <Card icon={<Droplets className="w-6 h-6" />} step="Cuidado 1" title="Higienize as mãos nos momentos importantes">
               <p className="text-sm text-slate-700 leading-relaxed">As mãos podem transportar microrganismos entre pessoas e superfícies. A higiene das mãos é uma medida essencial para reduzir a transmissão de infecções.</p>

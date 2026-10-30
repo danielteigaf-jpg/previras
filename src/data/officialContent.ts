@@ -78,17 +78,6 @@ export const HAND_HYGIENE_STEPS: HandHygieneStep[] = [
     highlightZone: 'fingertips',
     officialReference: 'Anvisa / Nota Técnica GVIMS/GGTES'
   },
-  {
-    id: 7,
-    title: '7. Fricção circular dos punhos',
-    subtitle: 'Fechamento da técnica de fricção antisséptica',
-    description: 'Envolva o punho esquerdo com a mão direita e realize movimentos circulares de rotação. Repita com o punho direito.',
-    recommendation: 'O punho é a zona de transição com a manga do uniforme/jaleco e também pode entrar em contato com o leito.',
-    durationAlcohol: '2 a 3 segundos por punho',
-    durationSoap: '5 a 8 segundos por punho',
-    highlightZone: 'wrists',
-    officialReference: 'Anvisa / Protocolo de Higiene das Mãos'
-  }
 ];
 
 export const FIVE_MOMENTS: FiveMoment[] = [

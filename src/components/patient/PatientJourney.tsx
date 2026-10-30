@@ -3,8 +3,8 @@ import { PATIENT_CHALLENGES } from '../../data/officialContent';
 import { PatientChallenge } from '../../types/previras';
 import {
   Heart, Droplets, HelpCircle, AlertTriangle, Wind, Bell, CheckCircle2,
-  ArrowRight, RotateCcw, ShieldCheck, MessageCircle, ArrowLeft, Users,
-  UserCheck, Pill, Footprints, BedDouble, Printer, Info, ClipboardCheck
+  ArrowRight, RotateCcw, MessageCircle, ArrowLeft, Users,
+  UserCheck, Pill, Footprints, BedDouble, Printer, Info
 } from 'lucide-react';
 
 interface PatientJourneyProps {
@@ -12,14 +12,14 @@ interface PatientJourneyProps {
   onSwitchToProfessional: () => void;
 }
 
-const Card: React.FC<{ icon: React.ReactNode; step: string; title: string; tone?: string; children: React.ReactNode }> = ({
-  icon, step, title, tone = 'teal', children
+const Card: React.FC<{ icon: React.ReactNode; step: string; title: string; children: React.ReactNode }> = ({
+  icon, step, title, children
 }) => (
   <section className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-3 break-inside-avoid">
     <div className="flex items-center gap-3">
-      <div className={'p-3 rounded-2xl bg-' + tone + '-50 text-' + tone + '-700'}>{icon}</div>
+      <div className="p-3 rounded-2xl bg-teal-50 text-teal-700">{icon}</div>
       <div>
-        <span className={'text-xs font-bold text-' + tone + '-700 uppercase tracking-wide'}>{step}</span>
+        <span className="text-xs font-bold text-teal-700 uppercase tracking-wide">{step}</span>
         <h2 className="text-lg font-bold text-slate-900">{title}</h2>
       </div>
     </div>
